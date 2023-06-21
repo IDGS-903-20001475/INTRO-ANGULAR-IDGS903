@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./iric.component.css']
 })
 export class IricComponent {
+
+  imageWidth:number=50;
+  imageMargin:number=2;
+  muestraImg:boolean=true;
+  listFilter:string='';
+
+  showImagen():void{
+    this.muestraImg = !this.muestraImg;
+  }
   alumnos:any[]=[
     {
     "matricula":20001475,

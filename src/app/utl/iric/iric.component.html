@@ -30,7 +30,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let alumno of alumnos">
+                    <tr *ngFor="let alumno of alumnos |alumnosFilter:listFilter">
                         <td><img *ngIf="muestraImg" [src]="alumno.foto" 
                             [title]="alumno.nombre"
                             [style.width.px]="imageWidth"
